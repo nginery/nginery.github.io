@@ -1,0 +1,58 @@
+# Privacy Policy — Pigment
+
+**Last Updated: October 30, 2026**
+
+## 1. General
+
+Pigment (the “App”) is a color-based puzzle game published under the package name `com.pigment.app`. This Privacy Policy explains how the App processes data.
+
+## 2. Data We Collect
+
+- **Local game progress, settings, and preferences:** Stored on your device and not sent to our servers through a user account.
+- **Room and multiplayer game data:** Information required to create and join multiplayer rooms, participate in games, and synchronize gameplay between players.
+- **Usage analytics:** Information such as game sessions, level starts, game completions, and screen views, collected through Firebase Analytics.
+- **Crash and error reports:** Collected through Firebase Crashlytics.
+- **Advertising ID and device- or advertising-related technical data:** Processed by Google AdMob to display advertisements.
+
+## 3. How We Use Data
+
+We use data to provide multiplayer gameplay functionality, synchronize game sessions, improve analytics and app stability, display advertisements, and enhance the overall user experience.
+
+## 4. Third-Party Services
+
+The App may use the following third-party services:
+
+- **Firebase Analytics**
+- **Firebase Crashlytics**
+- **Firebase Firestore**
+- **Google AdMob**
+
+These services are subject to their respective privacy policies and terms.
+
+- Google Privacy Policy: https://policies.google.com/privacy
+- Google AdMob Privacy Information: https://support.google.com/admob/answer/6128543
+- Firebase Privacy Information: https://firebase.google.com/support/privacy
+
+## 5. Data Retention
+
+Local game data remains on your device and can be reset through the App's Settings menu, where available.
+
+Multiplayer room data is stored and processed as necessary to provide multiplayer functionality and is retained according to the applicable data management practices.
+
+Analytics, crash reporting, and advertising data are retained in accordance with the applicable data retention policies of the relevant third-party services.
+
+## 6. Children’s Privacy
+
+The App is not intended for children under the age of 13.
+
+## 7. Your Rights and Choices
+
+You can limit ad personalization through your device settings and manage your local game progress within the App.
+
+The App does not require user account creation. However, certain multiplayer features may process temporary player or room-related identifiers to support gameplay.
+
+## 8. Contact Us
+
+If you have any questions about this Privacy Policy, please contact us at:
+
+**Email:** engin.erayy@gmail.com
