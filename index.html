@@ -6,7 +6,7 @@
     <title>nginery</title>
     <meta
       name="description"
-      content="nginery — Shibomo and thoughtful mobile puzzles."
+      content="nginery — Shibomo, Pigment: Color Race, and thoughtful mobile play."
     />
     <link rel="icon" href="./icon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +22,8 @@
         --paper: #f4f7fb;
         --accent: #0891b2;
         --accent-deep: #0e7490;
+        --pigment: #e11d48;
+        --pigment-deep: #be123c;
         --line: rgba(15, 23, 42, 0.12);
       }
 
@@ -29,6 +31,10 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
       }
 
       html,
@@ -114,12 +120,12 @@
         font-size: clamp(1.55rem, 4.4vw, 2.35rem);
         line-height: 1.15;
         letter-spacing: -0.02em;
-        max-width: 14ch;
+        max-width: 16ch;
       }
 
       .support {
         margin-top: 0.85rem;
-        max-width: 28ch;
+        max-width: 30ch;
         color: var(--ink-muted);
         font-size: clamp(1.05rem, 2.4vw, 1.2rem);
         line-height: 1.45;
@@ -159,6 +165,18 @@
         outline-offset: 3px;
       }
 
+      .btn--pigment {
+        background: var(--pigment);
+      }
+
+      .btn--pigment:hover {
+        background: var(--pigment-deep);
+      }
+
+      .btn--pigment:focus-visible {
+        outline-color: var(--pigment);
+      }
+
       .link {
         color: var(--ink-muted);
         font-weight: 600;
@@ -172,24 +190,92 @@
         border-bottom-color: var(--line);
       }
 
-      .product {
-        display: grid;
-        place-items: center;
-        padding: 0 1.25rem 4.5rem;
+      .apps {
+        width: min(1100px, calc(100% - 2.5rem));
+        margin: 0 auto;
+        padding: 1rem 0 4.5rem;
       }
 
-      .product__frame {
-        width: min(280px, 70vw);
+      .apps__intro {
+        max-width: 28rem;
+        margin-bottom: 2.25rem;
+        animation: rise 900ms cubic-bezier(0.22, 1, 0.36, 1) 120ms both;
+      }
+
+      .apps__eyebrow {
+        color: var(--accent-deep);
+        font-weight: 700;
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .apps__title {
+        margin-top: 0.55rem;
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.7rem, 4vw, 2.2rem);
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+      }
+
+      .app {
+        display: grid;
+        gap: 1.35rem;
+        padding: 2rem 0;
+        border-top: 1px solid var(--line);
+        animation: rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      .app:nth-child(2) {
+        animation-delay: 180ms;
+      }
+
+      .app:nth-child(3) {
+        animation-delay: 280ms;
+      }
+
+      .app:last-child {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .app__visual {
+        width: min(148px, 38vw);
         aspect-ratio: 1;
         animation: float 5.5s ease-in-out infinite;
       }
 
-      .product__frame img {
+      .app__visual img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
         border-radius: 22%;
         box-shadow: 0 18px 40px rgba(11, 18, 32, 0.12);
+      }
+
+      .app__name {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.45rem, 3.5vw, 1.85rem);
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .app__blurb {
+        margin-top: 0.55rem;
+        max-width: 34ch;
+        color: var(--ink-muted);
+        font-size: 1.05rem;
+        line-height: 1.45;
+      }
+
+      .app__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem 1.1rem;
+        align-items: center;
+        margin-top: 1.25rem;
       }
 
       .foot {
@@ -236,10 +322,25 @@
       }
 
       @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
         .hero__media img,
         .hero__content,
-        .product__frame {
+        .apps__intro,
+        .app,
+        .app__visual {
           animation: none;
+        }
+      }
+
+      @media (min-width: 720px) {
+        .app {
+          grid-template-columns: auto 1fr;
+          align-items: center;
+          gap: 1.75rem;
+          padding: 2.35rem 0;
         }
       }
 
@@ -250,10 +351,6 @@
 
         .hero__content {
           width: min(1100px, calc(100% - 4rem));
-          display: grid;
-          grid-template-columns: 1.15fr 0.85fr;
-          gap: 2rem;
-          align-items: center;
           padding: 5rem 0;
         }
 
@@ -261,13 +358,9 @@
           max-width: 34rem;
         }
 
-        .product {
-          padding: 0;
-          justify-items: end;
-        }
-
-        .product__frame {
-          width: min(320px, 28vw);
+        .apps {
+          width: min(1100px, calc(100% - 4rem));
+          padding: 0.5rem 0 5rem;
         }
 
         .foot {
@@ -288,12 +381,40 @@
         <div class="hero__content">
           <div class="copy">
             <p class="brand">nginery</p>
-            <h1 class="headline">Shibomo — feel clever through play</h1>
+            <h1 class="headline">Playful apps, built with care</h1>
             <p class="support">
-              Four puzzle styles on one quiet journey. Built and published by
-              nginery.
+              Puzzle and color games from a small studio — clear, calm, and made
+              to feel good in your hands.
             </p>
             <div class="actions">
+              <a class="btn" href="#apps">See our apps</a>
+              <a class="link" href="mailto:eraysworks@gmail.com">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="apps" id="apps" aria-label="Apps">
+        <div class="apps__intro">
+          <p class="apps__eyebrow">Apps</p>
+          <h2 class="apps__title">What we’re shipping</h2>
+        </div>
+
+        <article class="app">
+          <div class="app__visual">
+            <img
+              src="./icon.png"
+              width="512"
+              height="512"
+              alt="Shibomo app icon"
+            />
+          </div>
+          <div>
+            <h3 class="app__name">Shibomo</h3>
+            <p class="app__blurb">
+              Four puzzle styles on one quiet journey. Feel clever through play.
+            </p>
+            <div class="app__actions">
               <a
                 class="btn"
                 href="https://play.google.com/store/apps/details?id=com.shibomo.app"
@@ -302,13 +423,35 @@
               <a class="link" href="./privacy-policy.txt">Privacy policy</a>
             </div>
           </div>
+        </article>
 
-          <div class="product">
-            <div class="product__frame">
-              <img src="./icon.png" width="512" height="512" alt="Shibomo app icon" />
+        <article class="app">
+          <div class="app__visual">
+            <img
+              src="./pigment-icon.png"
+              width="512"
+              height="512"
+              alt="Pigment: Color Race app icon"
+            />
+          </div>
+          <div>
+            <h3 class="app__name">Pigment: Color Race</h3>
+            <p class="app__blurb">
+              A color puzzle race — solo focus or multiplayer rooms when you want
+              company.
+            </p>
+            <div class="app__actions">
+              <a
+                class="btn btn--pigment"
+                href="https://play.google.com/store/apps/details?id=com.pigment.app"
+                >Get Pigment on Google Play</a
+              >
+              <a class="link" href="./privacy-policy-pigment.txt"
+                >Privacy policy</a
+              >
             </div>
           </div>
-        </div>
+        </article>
       </section>
     </main>
 
