@@ -1,0 +1,60 @@
+# Privacy Policy — Nova Bricks
+
+**Last Updated: November 15, 2026**
+
+## 1. General
+
+Nova Bricks (the “App”) is a brick-breaker arcade game published under the package name `com.novabricks.game`. This Privacy Policy explains how the App processes data.
+
+## 2. Data We Collect
+
+- **Local game progress, settings, and preferences:** Unlocked chapters, stars, best score, saved games, language, and sound settings are stored only on your device. The App has no user accounts and does not send this data to our servers.
+- **Advertising ID and device- or advertising-related technical data:** Processed by Google AdMob to display optional rewarded advertisements (for example, to continue after a game over).
+- **Consent choices:** Your privacy and ad consent choices are collected and stored through Google's User Messaging Platform (UMP), where required by law (for example, in the EEA, the UK, and certain US states).
+
+The App does not use analytics or crash-reporting services, and it does not collect your name, email address, location, contacts, or other personal information.
+
+## 3. How We Use Data
+
+We use data to save your game progress and settings on your device, show advertisements, and ask for and respect your consent choices for advertising.
+
+## 4. Third-Party Services
+
+The App uses the following third-party services:
+
+- **Google AdMob**
+- **Google User Messaging Platform (UMP)**
+
+These services are subject to their respective privacy policies and terms.
+
+- Google Privacy Policy: https://policies.google.com/privacy
+- How Google uses information from apps that use its services: https://policies.google.com/technologies/partner-sites
+- Google AdMob Privacy Information: https://support.google.com/admob/answer/6128543
+
+## 5. Data Retention
+
+Local game data remains on your device until you delete it. You can erase it at any time with **Settings → Reset progress** in the App, or by clearing the App's data or uninstalling it. If Android backup is turned on, your device may include this data in your personal Google backup, which is controlled by your device settings.
+
+Advertising and consent data are retained in accordance with Google's data retention policies.
+
+## 6. Children’s Privacy
+
+The App is not intended for children under the age of 13, and we do not knowingly collect personal information from them.
+
+## 7. Your Rights and Choices
+
+- You can review or change your ad consent choices at any time with **Settings → Privacy & ad settings** in the App, where available in your region.
+- You can reset or opt out of ad personalization through your device settings (for example, **Settings → Privacy → Ads** on Android).
+- You can delete your local game progress with **Settings → Reset progress**.
+
+The App does not require user account creation.
+
+## 8. Changes to This Policy
+
+We may update this Privacy Policy from time to time. Changes take effect when the updated policy is posted, and the “Last Updated” date above will change.
+
+## 9. Contact Us
+
+If you have any questions about this Privacy Policy, please contact us at:
+
+**Email:** engin.erayy@gmail.com
